@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+.header,
+.nav, 
+.card {
+  display: flex;
+}
+.header {
+  margin: 50px auto 30px auto;
+}
+.header figure {
+  width: 10%;
+}
+.nav {
+  align-items: center;
+  width: 80%;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.navlink{
+    color: var(--Dark-grayish-blue);
+    text-decoration: none;
+}
+
+.navlink:hover{
+  color: var(--Soft-orange);
+}
+
+.header, .main{
+  width: 90%;
+}
+
+main{
+  margin: 0 auto;
+}
+
+.section, 
+.down, .desc {
+  display: grid;
+}
+
+.right{
+  background-color: var(--Very-dark-blue);
+  padding: 30px;
+}
+
+.top{
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.left, .up, .up img{
+  width: 100%;
+}
+
+.aside-title{
+  color: var(--Soft-orange);
+}
+
+.aside-container div{
+  margin: 30px 0;
+}
+
+.headline h3{
+  color: var(--Off-white);
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.headline h3:hover{
+  color: var(--Soft-orange);
+}
+
+.headline p, .hr{
+  color: var(--Grayish-blue);
+  border-color: var(--Grayish-blue);
+  font-size: 1.05rem;
+}
+
+.hr{
+  opacity: 50%;
+}
+
+.down{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding-top: 30px;
+
+}
+
+.heading{
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 3.5rem;
+}
+
+.desc{
+flex-direction: column;
+justify-content: space-between;
+}
+
+.desc p{
+  color: var(--Dark-grayish-blue);
+  padding-right: 15px;
+  line-height: 1.6rem;
+}
+
+.desc button{
+  width: 130px;
+  border: none;
+  background-color: var(--Soft-red);
+  color: var(--Off-white);
+}
+
+.desc button:hover{
+  background-color: #000;
+}
+/* styling the bottom section */
+
+.bottom{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card{
+  gap: 20px;
+}
+
+.card figure{
+  width: 200px;
+
+}
+
+.card figure img{
+width: 100%;
+}
+
+.card div h3{
+  font-weight: 600;
+  padding: 15px 0;
+  font-size: 1rem;
+  cursor: pointer;
+
+
+}
+
+.card div h3:hover{
+  color: var(--Soft-red);
+}
+
+.num{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card div p{
+  color: var(--Grayish-blue);
+}
